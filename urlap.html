@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="kék.png">
+
+
+    <div class="sidebar">
+        <div class="linkek">
+           <a class="active"  href="index.html">Főoldal</a>
+        </div>
+        <br>
+        <div class="linkek">
+        <a class="active"  href="keplink.html">Mókus kép</a>
+        </div>
+        <br>
+        <div class="linkek">
+        <a class="active"  href="lista.html">Listáim</a>
+        </div>
+        <br>
+        <div class="linkek">
+        <a class="active"  href="tablazat.html">Órarendem</a>
+        </div>
+        <br>
+        <div class="linkek">
+        <a class="active"  href="urlap.html">Kérdőív</a>
+        </div>
+        <br>
+<div class="linkek">
+    <a class="active" href="doga.html">Dolgozatok
+    </a>
+</div>
+</div>
+
+
+        <div class="content">
+
+
+<form name="Adatok">
+<p>
+<fieldset>
+
+<legend>Személyes adatai</legend>
+
+név:
+
+<input type="text" name="nev">
+<small>Vezetéknév Keresztnév</small>
+
+</p>
+
+<p>
+
+<label>
+
+    telefon:
+    <input type="tel" name="telefon" size="10">
+
+</label>
+</p>
+</fieldset>
+
+<br><br>
+
+<FIeldset>
+    <Legend>Neme:</Legend>
+    <P>
+
+<Label>
+Férfi
+<input type="radio" name="nem" value="férfi">
+</Label>
+
+<Label>
+Nő
+<input type="radio" name="nem" value="nő">
+
+</Label>
+
+
+</P>
+</FIeldset>
+<br><br>
+<fieldset>
+<legend> Végzetségei</legend>
+<p>
+<label>
+    8. osztályos ált. iskola
+<input type="checkbox" name="isk" value="ált">
+</label>
+<br>
+<label >
+    szakgimnázium/technikum
+    <input type="checkbox" name="isk" value="köz">
+</label>
+<br>
+<label>
+    Gimnázium
+    <input type="checkbox" name="isk" value="gim">
+</label>
+<br>
+<label>
+    Egyetem
+    <input type="checkbox" name="isk" value="egy">
+</label>
+
+</p>
+
+</fieldset>
+<br>
+<fieldset>
+    <label>
+        <input type="reset" name="Visszaállítás">
+        <input type="submit" name="kuldes">
+    </label>
+ 
+</fieldset>
+</form>
+        </div>
+</body>
+</html>
