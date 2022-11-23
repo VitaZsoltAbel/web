@@ -1,0 +1,36 @@
+
+div.tavasz {
+
+width: 400px;
+height: 400px;
+float: left;
+
+transition: 1s;
+
+}
+
+
+
+div.tavasz:hover {
+    transform: scale(1.12);
+    
+    }
+
+
+    div.tavasz:hover ::after {
+        transform: scale(1);
+       
+        }
+        .kep {
+            float: right;
+            border: solid;
+    
+        }
+    
+       h1 {
+        clear: both;
+        float: right;
+        
+       }
+
+
