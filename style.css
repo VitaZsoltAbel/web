@@ -25,3 +25,22 @@ ul:not(.listak) {
   .active {
     background-color: #04AA6D;
   }
+
+  .footer {
+    
+   
+    height: 100px;
+background-color: cadetblue;
+
+  }
+
+  .cp{
+
+    text-align: center;
+font-family: sans-serif;
+  }
+
+ .oldal {
+  height: 980px;
+  width: 1920px;
+ }
