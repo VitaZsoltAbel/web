@@ -1,0 +1,58 @@
+div.red {
+    background-color: crimson;
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: solid;
+    transition: 1s;
+}
+div.red:hover {
+transform: scale(1.5);
+}
+
+div.red:hover ::after {
+    transform: scale(1);
+    }
+
+
+
+div.green {
+background-color: darkgreen;
+width: 200px;
+height: 200px;
+float: left;
+border: solid;
+transition: 1s;
+}
+
+
+
+div.green:hover {
+    transform: scale(1.5);
+    
+    }
+    div.green:hover ::after {
+        transform: scale(1);
+       
+        }
+    
+
+
+div.blue {
+    background-color: mediumblue;
+    width: 400px;
+    height: 100px;
+    clear: both;   
+    border: solid;
+    transition: 1s;
+}
+
+
+div.blue:hover {
+    transform: scale(1.5);
+    
+    }
+
+    div.blue:hover ::after {
+        transform: scale(1);
+        }
