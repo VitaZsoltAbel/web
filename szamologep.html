@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Űrlap</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-    <link rel="manifest" href="icon/site.webmanifest">
-    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+   <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+   <link rel="manifest" href="icon/site.webmanifest">
+   <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
     <style>
          
         * {
@@ -75,102 +75,59 @@
         
         <div style="overflow:auto">
           <div class="menu">
-            <a  href="index.html">főoldal</a> 
-           <a  href="keplink.html">Mókuskép</a> 
+            <a href="index.html">főoldal</a> 
+           <a href="keplink.html">Mókuskép</a> 
            <a href="lista.html">Listáim</a> 
            <a href="tablazat.html">Órarendem</a> 
-            <a class="active" href="urlap.html">Kérdőív</a> 
+            <a href="urlap.html">Kérdőív</a> 
             <a href="doga.html">Dolgozat</a> 
             <a href="div.html">Évszakok</a> 
-            <a href="szamologep.html">Egyszerű számológép</a> 
+            <a class="active" href="szamologep.html">Egyszerű számológép</a>  
           </div>
 
 
           <div class="main">
 
 
-<form name="Adatok">
-<p>
-<fieldset>
 
-<legend>Személyes adatai</legend>
-
-név:
-
-<input type="text" name="nev">
-<small>Vezetéknév Keresztnév</small>
-
-</p>
-
-<p>
-
-<label>
-
-    telefon:
-    <input type="tel" name="telefon" size="10">
-
-</label>
-</p>
-</fieldset>
-
-<br><br>
-
-<FIeldset>
-    <Legend>Neme:</Legend>
-    <P>
-
-<Label>
-Férfi
-<input type="radio" name="nem" value="férfi">
-</Label>
-
-<Label>
-Nő
-<input type="radio" name="nem" value="nő">
-
-</Label>
+            <form action="javascript:void(0)">
+                <fieldset>
+                    <legend>Egyszerű számológép program</legend>
+                    <input type="number" name="szam" id="szam1" placeholder="SZÁM 1"> .
+                    <input type="number" name="szam" id="szam2" placeholder="SZÁM 2"> =
+                    <input type="text" id="eredmeny" placeholder="eredmény" readonly>
+                    <br><br>
+                    <label for="muv">művelet:</label>
+                    <input type="button" name="muv" value="+" onclick="ad()">
+                    <input type="button" name="muv" value="-" onclick="kiv()">
+                    <input type="button" name="muv" value="*" onclick="szor()">
+                    <input type="button" name="muv" value="/" onclick="oszt()">
+                    <input type="reset" name="muv" value="DEL">
+                </fieldset>
+  </form>
 
 
-</P>
-</FIeldset>
-<br><br>
-<fieldset>
-<legend> Végzetségei</legend>
-<p>
-<label>
-    8. osztályos ált. iskola
-<input type="checkbox" name="isk" value="ált">
-</label>
-<br>
-<label >
-    szakgimnázium/technikum
-    <input type="checkbox" name="isk" value="köz">
-</label>
-<br>
-<label>
-    Gimnázium
-    <input type="checkbox" name="isk" value="gim">
-</label>
-<br>
-<label>
-    Egyetem
-    <input type="checkbox" name="isk" value="egy">
-</label>
+  <script>
+    function ad() {
+        eredmeny.value = Number(szam1.value) + Number(szam2.value);
+    }
 
-</p>
+    function kiv() {
+        eredmeny.value = Number(szam1.value) - Number(szam2.value);
+    }
 
-</fieldset>
-<br>
-<fieldset>
-    <label>
-        <input type="reset" name="Visszaállítás">
-        <input type="submit" name="kuldes">
-    </label>
- 
-</fieldset>
-</form>
-        </div>
-    </div>
-    <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright Vita Zsolt Ábel</div>
-</body>
-</html>
+
+    function szor() {
+        eredmeny.value = Number(szam1.value) * Number(szam2.value);
+    }
+
+
+    function oszt() {
+        eredmeny.value = Number(szam1.value) / Number(szam2.value);
+    }
+</script>
+
+
+
+
+          </div>
